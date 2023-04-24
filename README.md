@@ -1,2 +1,2 @@
-# my_adoption_app
-App visualizing the national adoption statistics.
+# my_ufo_app
+App visualizing UFO sighting statistics in 2016
