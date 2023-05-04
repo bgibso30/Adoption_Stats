@@ -15,7 +15,7 @@ def load_data(data):
     ufo_df = pd.read_csv(data)
     return ufo_df
 
-ufo_df = load_data('UFOs.csv")
+ufo_df = load_data('UFOs.csv')
 
 # Create new columns
 ufo_df['Date_Time'] = pd.to_datetime(ufo_df['Date_Time'])
