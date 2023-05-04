@@ -47,7 +47,7 @@ word_size = st.sidebar.slider('Size of largest word', min_value=50, max_value=35
 #Create vertical space
 st.sidebar.write(" ")
 st.sidebar.write(" ")
-image = Image.open('ufo.jpg')
+image = Image.open('ufo.png')
 st.sidebar.image(image, use_column_width=True)
 
 
