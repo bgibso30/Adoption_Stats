@@ -10,7 +10,7 @@ from ufo_app2 import *
 
 
 #Read in data
-ufo_df = pd.read_csv('/data/UFOs.csv")
+ufo_df = pd.read_csv('/data/UFOs.csv')
 
 # Create new columns
 ufo_df['Date_Time'] = pd.to_datetime(ufo_df['Date_Time'])
@@ -47,7 +47,7 @@ word_size = st.sidebar.slider('Size of largest word', min_value=50, max_value=35
 #Create vertical space
 st.sidebar.write(" ")
 st.sidebar.write(" ")
-image = Image.open('/data/ufo.jpg")
+image = Image.open('/data/ufo.jpg')
 st.sidebar.image(image, use_column_width=True)
 
 
