@@ -10,9 +10,12 @@ from ufo_app2 import *
 
 
 #Read in data
-ufo_df = pd.read_csv('UFOs.csv')
+@st.cache_data
+def load_data(data):
+    ufo_df = pd.read_csv(data)
+    return ufo_df
 
-@st.cache #
+ufo_df = load_data('UFOs.csv")
 
 # Create new columns
 ufo_df['Date_Time'] = pd.to_datetime(ufo_df['Date_Time'])
