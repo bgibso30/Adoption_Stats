@@ -8,10 +8,11 @@ from nltk.tokenize import word_tokenize
 from PIL import Image
 from ufo_app2 import *
 
-@st.cache
 
 #Read in data
 ufo_df = pd.read_csv('UFOs.csv')
+
+@st.cache
 
 # Create new columns
 ufo_df['Date_Time'] = pd.to_datetime(ufo_df['Date_Time'])
