@@ -12,10 +12,11 @@ from ufo_app2 import *
 #Read in data
 @st.cache
 def load_data(data):
-    ufo_df = pd.read_csv(data)
-    return ufo_df
+    df = pd.read_csv(data)
+    return df
 
-ufo_df = load_data('UFOs.csv')
+df = load_data('UFOs.csv')
+ufo_df = df
 
 # Create new columns
 ufo_df['Date_Time'] = pd.to_datetime(ufo_df['Date_Time'])
@@ -150,7 +151,7 @@ st.altair_chart(line_chart)
 #Create vertical space
 st.write(" ")
 st.write(" ")
-st.subheader("Now, let's see how these sightings were described...") 
+st.subheader("Now, let's see how these sightings were described on a specific day...") 
 
 # Word Cloud
 month2 = st.selectbox('Choose a Month', ufo_df['Month'].unique())
