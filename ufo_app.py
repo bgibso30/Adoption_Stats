@@ -10,7 +10,7 @@ from ufo_app2 import *
 
 
 #Read in data
-@st.cache_data
+@st.cache
 def load_data(data):
     df = pd.read_csv(data)
     return df
