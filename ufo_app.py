@@ -15,7 +15,7 @@ def load_data(data):
     df = pd.read_csv(data)
     return df
 
-df = load_data('UFOs.csv')
+load_data('UFOs.csv')
 ufo_df = df
 
 # Create new columns
